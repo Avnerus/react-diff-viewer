@@ -441,7 +441,7 @@ class DiffViewer extends React.Component<ReactDiffViewerProps, ReactDiffViewerSt
           }
           if (
             line.left.type === DiffType.DEFAULT
-            && (currentPosition > extraLines
+            && (currentPosition >= extraLines
               || typeof diffBlockStart === 'undefined')
             && !this.state.expandedBlocks.includes(diffBlockStart)
           ) {
