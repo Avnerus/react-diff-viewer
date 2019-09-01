@@ -66,7 +66,7 @@ const constructLines = (value: string): string[] => {
  */
 const computeWordDiff = (oldValue: string, newValue: string): WordDiffInformation => {
   const diffArray = diff
-    .diffChars(oldValue, newValue);
+    .diffWords(oldValue, newValue);
   const wordDiff: WordDiffInformation = {
     left: [],
     right: [],
